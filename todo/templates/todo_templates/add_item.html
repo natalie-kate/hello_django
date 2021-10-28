@@ -10,7 +10,7 @@
     <h1>Add Item</h1>
     <form method="POST" action="add">
         {% csrf_token %}
-        {{ form }}
+        {{ form.as_p }}
         <div>
             <P>
                <button type="submit">Add Item</button>
